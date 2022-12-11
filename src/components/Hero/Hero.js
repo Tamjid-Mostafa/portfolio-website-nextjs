@@ -6,8 +6,8 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
-import { fadeIn, staggerContainer, textVariant, slideIn } from "../../utilities/motion";
-import { TypingText } from "../../utilities/TypingTexts";
+import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
+import { TypingText } from "../../utils/TypingTexts";
 
 const Hero = () => {
   return (

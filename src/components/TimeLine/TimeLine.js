@@ -18,9 +18,9 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
-import { TypingText } from "../../utilities/TypingTexts";
+import { TypingText } from "../../utils/TypingTexts";
 
-import { fadeIn, staggerContainer, textVariant, slideIn } from "../../utilities/motion";
+import { fadeIn, staggerContainer, textVariant, slideIn } from "../../utils/motion";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 

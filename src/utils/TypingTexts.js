@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { textContainer, textVariant2 } from '../utilities/motion';
+import { textContainer, textVariant2 } from './motion';
 
-export const TypingText = ({ title, textStyles }) => (
+export const TypingText = ({ title  }) => (
   <motion.p
     variants={textContainer}
   >
@@ -15,7 +15,7 @@ export const TypingText = ({ title, textStyles }) => (
   </motion.p>
 );
 
-export const TitleText = ({ title, textStyles }) => (
+export const TitleText = ({ title }) => (
   <motion.h2
     variants={textVariant2}
     initial="hidden"

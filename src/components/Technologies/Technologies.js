@@ -18,8 +18,8 @@ import {
   staggerContainer,
   textVariant,
   slideIn,
-} from "../../utilities/motion";
-import { TypingText } from "../../utilities/TypingTexts";
+} from "../../utils/motion";
+import { TypingText } from "../../utils/TypingTexts";
 
 const Technologies = () => (
   <Section

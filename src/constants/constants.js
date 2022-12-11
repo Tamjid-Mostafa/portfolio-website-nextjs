@@ -1,6 +1,7 @@
-export const projects = [
+export const projectsData = [
   {
     title: "Your Moto",
+    slug: "your-moto",
     description:
       "Using React, Node.js, Express & MongoDB, I build a Full Stack MERN Application - from start to finish. The App is called Your Moto and it is a simple used bike buy & sell app that allows users to post products with information also can boost their product advertisement. Buyers can make purchase their desire bike with their meeting locations and phone numbers also can book their product. I have used stripe to make purchase.",
     image: "https://i.ibb.co/tB6RpHj/1.jpg",
@@ -11,6 +12,7 @@ export const projects = [
   },
   {
     title: "Edu Vibe",
+    slug: "edu-vibe",
     description:
       "In this website I have displayed some web development technology courses. Using React, Node.js, Express & MongoDB, I build a Full Stack MERN Application - from start to finish. The App is called Edu Vibe and it is a simple E-Learning platform that allows users to learn and purchase new courses.",
     image: "https://i.ibb.co/t2qXCWG/2.jpg",
@@ -20,7 +22,8 @@ export const projects = [
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: "Photography Lux",
+    slug: "photography-lux",
     description:
       "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     image: "https://i.ibb.co/rMNXxdr/3.jpg",

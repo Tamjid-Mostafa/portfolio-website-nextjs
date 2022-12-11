@@ -13,7 +13,7 @@ import {
   SocialContainer,
   SocialIconsContainer,
 } from "./FooterStyles";
-import { footerVariants } from '../../utilities/motion';
+import { footerVariants } from '../../utils/motion';
 
 const Footer = () => {
   return (

@@ -18,9 +18,12 @@ import {
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
-import { TypingText } from "../../utilities/TypingTexts";
-import { fadeIn, staggerContainer, textVariant, slideIn } from "../../utilities/motion";
+import { projectsData } from "../../constants/constants";
+import { TypingText } from "../../utils/TypingTexts";
+import {
+  staggerContainer,
+} from "../../utils/motion";
+import Link from "next/link";
 
 const Projects = () => (
   <Section
@@ -36,15 +39,15 @@ const Projects = () => (
       <TypingText title="| Projects" />
     </SectionTitle>
     <GridContainer>
-      {projects.map(
-        ({ id, title, image, description, tags, source, visit }) => (
+      {projectsData.map(
+        ({ id, title, image, description, tags, source, visit, slug }) => (
           <BlogCard key={id}>
             <Img src={image} />
             <TitleContent>
               <HeaderThree title="true">{title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo>{description.slice(0,100)}</CardInfo>
+            <CardInfo>{description.slice(0, 100)}</CardInfo>
             <div>
               <TitleContent>Stack</TitleContent>
               <TagList>
@@ -61,6 +64,7 @@ const Projects = () => (
                 Source
               </ExternalLinks>
             </UtilityList>
+            <Link href={`/project/${slug}`}>See Details</Link>
           </BlogCard>
         )
       )}

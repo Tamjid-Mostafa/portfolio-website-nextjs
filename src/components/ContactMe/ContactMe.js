@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef } from "react";
 
 import emailjs from "@emailjs/browser";
 import toast from 'react-hot-toast';
@@ -9,8 +9,8 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { StyledContactForm } from "./ContactMeStyles";
-import { TypingText } from "../../utilities/TypingTexts";
-import { fadeIn, staggerContainer, textVariant, slideIn } from "../../utilities/motion";
+import { TypingText } from "../../utils/TypingTexts";
+import { staggerContainer } from "../../utils/motion";
 
 const ContactMe = () => {
     const form = useRef();
