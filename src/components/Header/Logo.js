@@ -125,7 +125,7 @@ export const Logo = () => {
                     fill="url(#linear-gradient)"
                     r="88"
                     data-original="url(#linear-gradient)"
-                    className=""
+                    
                   ></circle>
                   <circle
                     id="Background_02"
@@ -134,7 +134,7 @@ export const Logo = () => {
                     fill="url(#linear-gradient-2)"
                     r="76"
                     data-original="url(#linear-gradient-2)"
-                    className=""
+                    
                   ></circle>
                 </g>
                 <g id="Shadow">
@@ -142,13 +142,13 @@ export const Logo = () => {
                     d="m158.66 116a76.28 76.28 0 0 1 -44.47 43.33l-37.07-37.03c4.16 3.74 9.24 5.25 14.77 5.61a39.65 39.65 0 0 0 19.9-3.85 1.18 1.18 0 0 0 .82-1.24c0-3.56 0-11.21 0-11.56-.36.2-5.89 3-8.64 3.46-3.31.59-6.53.48-9.51-1.32a6.22 6.22 0 0 1 -3.21-4.4c-.19-1.28 0-28 0-28.25h18.64v-12.58h-18.89c0-.45 0-13.17 0-19.17a1.07 1.07 0 0 0 -.18-.76z"
                     fill="url(#linear-gradient-3)"
                     data-original="url(#linear-gradient-3)"
-                    className=""
+                    
                   />
                   <motion.path
                     d="m72.29 80.73v8.91l-8.9-8.91z"
                     fill="url(#linear-gradient-4)"
                     data-original="url(#linear-gradient-4)"
-                    className=""
+                    
                   />
                 </g>
                 <motion.path
@@ -163,7 +163,7 @@ export const Logo = () => {
                   d="m72.29 80.73h-8.9c0-.37 0-7.23 0-10.36a1.06 1.06 0 0 1 .8-1.21c10.36-3.09 15.3-18.41 15.35-20.16 0-.69.41-1 1.08-1q4.72 0 9.47 0c.75 0 .93.26.92 1v19.2h18.89v12.52h-18.65c0 .25-.19 27 0 28.25a6.22 6.22 0 0 0 3.21 4.43c3 1.8 6.2 1.91 9.51 1.32 2.75-.48 8.28-3.26 8.64-3.46v11.56a1.18 1.18 0 0 1 -.82 1.24 39.65 39.65 0 0 1 -19.9 3.85c-5.93-.39-11.34-2.09-15.66-6.46-2.24-2.28-3.94-4.83-3.94-8.18z"
                   fill="#ffffff"
                   data-original="#ffffff"
-                  className=""
+                  
                 ></motion.path>
               </g>
             </g>

@@ -44,7 +44,7 @@ const Projects = () => (
               <HeaderThree title="true">{title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo>{description}</CardInfo>
+            <CardInfo>{description.slice(0,100)}</CardInfo>
             <div>
               <TitleContent>Stack</TitleContent>
               <TagList>
