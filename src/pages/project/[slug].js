@@ -10,6 +10,7 @@ import {
   HeaderThree,
   Hr,
   Img,
+  Intro,
   SpinnerWrapper,
   Tag,
   TagList,
@@ -20,6 +21,8 @@ import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { staggerContainer } from "../../utils/motion";
 import { InfinitySpin } from "react-loader-spinner";
 import { TypingText } from "../../utils/TypingTexts";
+import { GoMarkGithub } from "react-icons/go";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const ProjectDetails = () => {
   const { query } = useRouter();
@@ -51,12 +54,21 @@ const ProjectDetails = () => {
         <HeaderThree>Project's Links</HeaderThree>
         <UtilityList>
           <ExternalLinks target="_blank" href={visit}>
-            Github
+            <GoMarkGithub /> Github
           </ExternalLinks>
           <ExternalLinks target="_blank" href={source}>
             Visit
           </ExternalLinks>
         </UtilityList>
+        <CardInfo>{description}</CardInfo>
+        <>
+        <Intro>Technologies</Intro>
+              <TagList column>
+                {tags.map((tag, i) => (
+                  <Tag key={i}><BsArrowRightShort/> {tag}</Tag>
+                ))}
+              </TagList>
+            </>
       </Section>
     </Layout>
   );

@@ -102,13 +102,15 @@ export const Hr = styled.hr`
 `;
 
 export const Intro = styled.div`
-  width: 170px;
-  margin: 0 auto;
   color: #dce3e7;
   font-family: 'Droid Serif', serif;
-  font-size: 13px;
   font-style: italic;
   line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+  font-size: 3rem;
+  margin: 2rem 0;
 `;
 
 
@@ -164,8 +166,10 @@ position: relative;
 
 export const TagList = styled.ul`
 display: flex;
+flex-direction: ${(props) => props.column ? "column" : "row"};
 justify-content: space-between;
 padding: 2rem 0;
+grid-row-gap: 1rem;
 `
 export const Tag = styled.li`
 color: #d8bfbf;

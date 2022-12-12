@@ -6,7 +6,7 @@ export const Section = styled(motion.div)`
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   margin: 0 auto;
-  min-height: ${(props) => props.fullHeight ? "100vh" : "0" };
+  min-height: ${(props) => props.fullheight ? "100vh" : "0" };
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
