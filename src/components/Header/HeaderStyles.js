@@ -29,7 +29,7 @@ export const FixedHeader = styled.div`
   border-image-slice: 1;
 
   background-color: ${(props) =>
-    props.position ? "rgba(255, 255, 255, 0.2)" : ""};
+    props.position ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 0.05)"};
   backdrop-filter: ${(props) =>
     props.position
       ? "blur(5px) saturate(200%) contrast(100%) brightness(80%)"

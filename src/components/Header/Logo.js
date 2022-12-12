@@ -93,7 +93,7 @@ export const Logo = () => {
             y2="141.74"
           >
             <stop offset="0" stopColor="#384e63"></stop>
-            <stop offset="1" stopColor="#658aa8"></stop>
+            <stop offset="1" stopColor="#010313"></stop>
           </linearGradient>
           <linearGradient
             id="linear-gradient-3"

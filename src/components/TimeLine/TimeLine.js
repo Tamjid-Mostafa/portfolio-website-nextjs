@@ -20,7 +20,7 @@ import {
 import { TimeLineData } from "../../constants/constants";
 import { TypingText } from "../../utils/TypingTexts";
 
-import { fadeIn, staggerContainer, textVariant, slideIn } from "../../utils/motion";
+import { staggerContainer } from "../../utils/motion";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 

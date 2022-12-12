@@ -12,6 +12,7 @@ import {
   UtilityList,
   Img,
   ExternalLinks,
+  DetailsButton,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -44,27 +45,27 @@ const Projects = () => (
           <BlogCard key={id}>
             <Img src={image} />
             <TitleContent>
-              <HeaderThree title="true">{title}</HeaderThree>
+              <HeaderThree>{title}</HeaderThree>
               <Hr />
-            </TitleContent>
             <CardInfo>{description.slice(0, 100)}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
+            <>
               <TagList>
                 {tags.map((tag, i) => (
                   <Tag key={i}>{tag}</Tag>
                 ))}
               </TagList>
-            </div>
+            </>
             <UtilityList>
               <ExternalLinks target="_blank" href={visit}>
-                Code
+                Github
               </ExternalLinks>
               <ExternalLinks target="_blank" href={source}>
-                Source
+                Visit
               </ExternalLinks>
             </UtilityList>
-            <Link href={`/project/${slug}`}>See Details</Link>
+            <Link href={`/project/${slug}`}><DetailsButton>More Info</DetailsButton></Link>
+            
+            </TitleContent>
           </BlogCard>
         )
       )}
