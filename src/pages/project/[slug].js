@@ -3,18 +3,13 @@ import React from "react";
 import { Layout } from "../../layout/Layout";
 import { projectsData } from "../../constants/constants";
 import {
-  BlogCard,
   CardInfo,
   ExternalLinks,
-  GridContainer,
   HeaderThree,
-  Hr,
-  Img,
   Intro,
   SpinnerWrapper,
   Tag,
   TagList,
-  TitleContent,
   UtilityList,
 } from "../../components/Projects/ProjectsStyles";
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
@@ -36,7 +31,7 @@ const ProjectDetails = () => {
     );
   }
 
-  const { id, title, image, description, tags, source, visit } = project;
+  const { title, description, tags, source, visit } = project;
 
   return (
     <Layout title={title}>
