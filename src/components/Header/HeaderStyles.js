@@ -38,8 +38,7 @@ export const FixedHeader = styled.div`
     props.position
       ? "blur(5px) saturate(200%) contrast(100%) brightness(80%)"
       : ""};
-      transition: ${(props) =>
-    props.position ? "all 0.3s ease-in-out" : ""};
+  transition: ${(props) => (props.position ? "all 0.3s ease-in-out" : "")};
 `;
 export const Span = styled.span`
   font-size: 2rem;

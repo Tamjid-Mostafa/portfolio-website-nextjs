@@ -1,13 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import {
-  DiCssdeck,
-  DiCssTricks,
-  DiExtjs,
-  DiNodejs,
-  DiReact,
-} from "react-icons/di";
+import { AiFillGithub,AiFillLinkedin } from "react-icons/ai";
 
 import {
   Container,
@@ -53,22 +46,22 @@ const Header = () => {
         </Div1>
         <Div2>
           <li>
-            <NavLink href="#projects">
+            <NavLink href="/#projects">
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink href="#tech">
+            <NavLink href="/#tech">
               Technology
             </NavLink>
           </li>
           <li>
-            <NavLink href="#about">
+            <NavLink href="/#about">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink href="#contact">
+            <NavLink href="/#contact">
               Contact Me
             </NavLink>
           </li>
