@@ -9,8 +9,8 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Theme>
-        <Container>
         <Header />
+        <Container>
         <Component {...pageProps} />
         <Footer />
         </Container>
