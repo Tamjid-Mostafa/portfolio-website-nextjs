@@ -26,7 +26,10 @@ import {
 } from "../../utils/motion";
 import Link from "next/link";
 
-const Projects = () => (
+const Projects = () => {
+
+  
+  return (
   <Section
     nopadding="true"
     id="projects"
@@ -43,7 +46,7 @@ const Projects = () => (
       {projectsData.map(
         ({ id, title, image, description, tags, source, visit, slug }) => (
           <BlogCard key={id}>
-            <Img src={image} />
+            <Img src={image[0]} />
             <TitleContent>
               <HeaderThree>{title}</HeaderThree>
               <Hr />
@@ -72,5 +75,6 @@ const Projects = () => (
     </GridContainer>
   </Section>
 );
+                };
 
 export default Projects;

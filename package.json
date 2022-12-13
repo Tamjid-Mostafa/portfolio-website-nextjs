@@ -19,6 +19,7 @@
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
     "react-loader-spinner": "^5.3.4",
+    "react-photo-view": "^1.2.3",
     "react-router-dom": "^6.4.5",
     "styled-components": "^5.3.6",
     "styled-normalize": "^8.0.7"

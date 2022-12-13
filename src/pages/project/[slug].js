@@ -2,10 +2,13 @@ import { useRouter } from "next/router";
 import React from "react";
 import { Layout } from "../../layout/Layout";
 import { projectsData } from "../../constants/constants";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import {
   CardInfo,
   ExternalLinks,
   HeaderThree,
+  Img,
+  ImgGallery,
   Intro,
   SpinnerWrapper,
   Tag,
@@ -16,7 +19,7 @@ import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { staggerContainer } from "../../utils/motion";
 import { InfinitySpin } from "react-loader-spinner";
 import { TypingText } from "../../utils/TypingTexts";
-import { GoMarkGithub } from "react-icons/go";
+import { GoGlobe, GoMarkGithub } from "react-icons/go";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const ProjectDetails = () => {
@@ -31,8 +34,8 @@ const ProjectDetails = () => {
     );
   }
 
-  const { title, description, tags, source, visit } = project;
-
+  const { title, description, image, technologies, source, visit } = project;
+  console.log(project.image[0]);
   return (
     <Layout title={title}>
       <SectionTitle main>
@@ -49,21 +52,33 @@ const ProjectDetails = () => {
         <HeaderThree>Project's Links</HeaderThree>
         <UtilityList>
           <ExternalLinks target="_blank" href={visit}>
-            <GoMarkGithub /> Github
+            <GoMarkGithub /><span>Github</span>
           </ExternalLinks>
           <ExternalLinks target="_blank" href={source}>
-            Visit
+            <GoGlobe /><span>Visit</span>
           </ExternalLinks>
         </UtilityList>
         <CardInfo>{description}</CardInfo>
         <>
-        <Intro>Technologies</Intro>
-              <TagList column>
-                {tags.map((tag, i) => (
-                  <Tag key={i}><BsArrowRightShort/> {tag}</Tag>
-                ))}
-              </TagList>
-            </>
+          <Intro>Technologies</Intro>
+          <TagList column>
+            {technologies.map((tag, i) => (
+              <Tag key={i}>
+                <BsArrowRightShort /> <span>{tag}</span>
+              </Tag>
+            ))}
+          </TagList>
+        </>
+        <HeaderThree marginy>Image Gallery</HeaderThree>
+        <PhotoProvider maskOpacity={0.8}>
+          <ImgGallery>
+            {image.map((item, index) => (
+              <PhotoView key={index} src={item}>
+                <Img src={item} alt="" />
+              </PhotoView>
+            ))}
+          </ImgGallery>
+        </PhotoProvider>
       </Section>
     </Layout>
   );
