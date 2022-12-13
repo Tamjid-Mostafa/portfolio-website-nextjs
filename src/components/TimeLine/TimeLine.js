@@ -79,7 +79,9 @@ const Timeline = () => {
         as a React Developer for a software firm where I can anchorage my talent
         in Full Stack Development.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer
+      variants={fadeIn('right', 'tween', 0.5, 1)}
+      ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode

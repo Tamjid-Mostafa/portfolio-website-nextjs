@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const CarouselContainer = styled.ul`
+export const CarouselContainer = styled(motion.ul)`
   max-width: 1040px;
   padding: 0rem;
   list-style:none;

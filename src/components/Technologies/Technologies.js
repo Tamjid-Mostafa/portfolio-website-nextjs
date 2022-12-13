@@ -14,6 +14,7 @@ import {
   ListTitle,
 } from "./TechnologiesStyles";
 import {
+  fadeIn,
   staggerContainer,
 } from "../../utils/motion";
 import { TypingText } from "../../utils/TypingTexts";
@@ -29,11 +30,15 @@ const Technologies = () => (
     <SectionDivider />
     <br />
     <SectionTitle main><TypingText title="| Technologies" /></SectionTitle>
-    <SectionText>
+    <SectionText
+    variants={fadeIn('up', 'tween', 0.2, 1)}
+    >
       I've worked with a range a technologies in the web development world from
       Back-end to design
     </SectionText>
-    <List >
+    <List 
+    variants={fadeIn('up', 'tween', 0.5, 1)}
+    >
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
