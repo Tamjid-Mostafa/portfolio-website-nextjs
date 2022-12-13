@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Img = styled.img`
@@ -17,7 +18,7 @@ display: grid;
   
 `
 
-export const GridContainer = styled.section`
+export const GridContainer = styled(motion.section)`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding: 3rem;
@@ -32,7 +33,7 @@ export const GridContainer = styled.section`
     padding-bottom: 0;
   }
 `;
-export const BlogCard = styled.figure`
+export const BlogCard = styled(motion.figure)`
   position: relative;
   display: flex;
   align-items: center;

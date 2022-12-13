@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiFillGithub,AiFillLinkedin } from "react-icons/ai";
+import { navVariants } from "../../utils/motion";
 
 import {
   Container,
@@ -30,7 +31,11 @@ const Header = () => {
   }, []);
 
   return (
-    <FixedHeader position={`${fix ? "sticky" : ""}`}>
+    <FixedHeader position={`${fix ? "sticky" : ""}`}
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
+    >
       <Container>
         <Div1>
           <Link href="/"

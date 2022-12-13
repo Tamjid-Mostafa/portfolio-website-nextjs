@@ -10,7 +10,7 @@ import {
 } from "../../styles/GlobalComponents";
 import { StyledContactForm } from "./ContactMeStyles";
 import { TypingText } from "../../utils/TypingTexts";
-import { staggerContainer } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const ContactMe = () => {
     const form = useRef();
@@ -47,7 +47,9 @@ const ContactMe = () => {
     <SectionDivider />
     <br />
     <SectionTitle main><TypingText title="| Contact Me" /></SectionTitle>
-      <StyledContactForm>
+      <StyledContactForm
+      variants={fadeIn('up', 'tween', 0.2, 1)}
+      >
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />

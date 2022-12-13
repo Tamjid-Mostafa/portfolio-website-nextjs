@@ -1,4 +1,5 @@
 
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
@@ -31,14 +32,14 @@ export const CarouselContainer = styled.ul`
     margin-bottom: 8px;
   }
 `
-export const CarouselMobileScrollNode = styled.div`
+export const CarouselMobileScrollNode = styled(motion.div)`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
     min-width: ${({ final }) => final ? `120%;` : `min-content`}
   }
 `
 
-export const CarouselItem = styled.div`
+export const CarouselItem = styled(motion.div)`
   background: #0F1624;
   border-radius: 3px;
   padding: 2rem;

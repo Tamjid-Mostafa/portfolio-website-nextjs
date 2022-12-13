@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiUikit, DiZend } from "react-icons/di";
+import { DiFirebase, DiReact  } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -14,10 +14,7 @@ import {
   ListTitle,
 } from "./TechnologiesStyles";
 import {
-  fadeIn,
   staggerContainer,
-  textVariant,
-  slideIn,
 } from "../../utils/motion";
 import { TypingText } from "../../utils/TypingTexts";
 
@@ -36,7 +33,7 @@ const Technologies = () => (
       I've worked with a range a technologies in the web development world from
       Back-end to design
     </SectionText>
-    <List>
+    <List >
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>

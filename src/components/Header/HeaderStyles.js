@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: grid;
   max-width: 1280px;
   width: 100%;
@@ -20,7 +20,7 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
-export const FixedHeader = styled.div`
+export const FixedHeader = styled(motion.div)`
   position: ${(props) => props.position};
   top: 0;
   z-index: 10;

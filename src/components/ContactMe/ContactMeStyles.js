@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Boxes = styled.div`
+export const Boxes = styled(motion.div)`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,7 +22,7 @@ export const Boxes = styled.div`
     margin: 24px auto;
   }
 `;
-export const StyledContactForm = styled.div`
+export const StyledContactForm = styled(motion.div)`
   width: 600px;
   form {
     display: flex;

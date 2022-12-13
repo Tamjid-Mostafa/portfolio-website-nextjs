@@ -1,12 +1,16 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
+export const SectionContainer = styled.section`
+position: relative;
+`
+
 export const Section = styled(motion.div)`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   margin: 0 auto;
-  min-height: ${(props) => props.fullheight ? "100vh" : "0" };
+  min-height: ${(props) => props.fullheight ? "100vh" : "80vh" };
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;

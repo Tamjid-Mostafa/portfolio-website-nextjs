@@ -20,7 +20,7 @@ import {
 import { TimeLineData } from "../../constants/constants";
 import { TypingText } from "../../utils/TypingTexts";
 
-import { staggerContainer } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -71,7 +71,9 @@ const Timeline = () => {
     <SectionDivider />
     <br />
     <SectionTitle main><TypingText title="| About Me" /></SectionTitle>
-      <SectionText>
+      <SectionText
+      variants={fadeIn('up', 'tween', 0.2, 1)}
+      >
         I am Tamjid Mostafa from Bangladesh. I am passionate about Web
         Development specializing in MERN Stack Developer. I would love to work
         as a React Developer for a software firm where I can anchorage my talent
@@ -80,8 +82,12 @@ const Timeline = () => {
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
-            <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
-              <CarouselItem index={index} id={`carousel_item-${index}`} active={activeItem} onClick={(e) => handleClick(e, index)}>
+            <CarouselMobileScrollNode
+            
+            key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+              <CarouselItem
+              variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+              index={index} id={`carousel_item-${index}`} active={activeItem} onClick={(e) => handleClick(e, index)}>
                 <CarouselItemTitle>
                   {item.month}
                   <CarouselItemImg
@@ -125,7 +131,7 @@ const Timeline = () => {
       </CarouselContainer>
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
-          <CarouselButton 
+          <CarouselButton
           key={index}
           index={index}
           active={activeItem}

@@ -6,7 +6,7 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
-import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 import { TypingText } from "../../utils/TypingTexts";
 
 const Hero = () => {
@@ -20,14 +20,18 @@ const Hero = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <LeftSection
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        
       >
-        <SectionTitle main center variants={textVariant(0.2)}>
+        <SectionTitle main center
+        variants={fadeIn('up', 'tween', 0.2, 1)}
+        >
           Welcome to
           <br />
           <TypingText title="Tamjid Mostafa" />
         </SectionTitle>
-        <SectionText>
+        <SectionText
+        variants={fadeIn('up', 'tween', 0.4, 1)}
+        >
           I am a Full Stack Web Developer based in
           Bangladesh. I develop full-stack web applications using the MERN
           Stack, but I mostly love working on the front end using CSS and React.
