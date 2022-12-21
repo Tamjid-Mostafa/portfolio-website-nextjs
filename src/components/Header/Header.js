@@ -66,6 +66,11 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink href="/blog">
+              Blog
+            </NavLink>
+          </li>
+          <li>
             <NavLink href="/#contact">
               Contact Me
             </NavLink>

@@ -63,10 +63,10 @@ const Projects = () => {
                   </TagList>
                 </>
                 <UtilityList>
-                  <ExternalLinks target="_blank" href={visit}>
+                  <ExternalLinks target="_blank" href={source}>
                     Github
                   </ExternalLinks>
-                  <ExternalLinks target="_blank" href={source}>
+                  <ExternalLinks target="_blank" href={visit}>
                     Visit
                   </ExternalLinks>
                 </UtilityList>
