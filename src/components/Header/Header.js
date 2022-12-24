@@ -96,6 +96,7 @@ const Header = () => {
                 restDelta: 0.001,
               },
             }}
+            target="_blank"
             href="https://github.com/Tamjid-Mostafa"
           >
             <AiFillGithub size="3rem" />
@@ -116,6 +117,7 @@ const Header = () => {
               },
             }}
             viewport={{ once: false, amount: 0.25 }}
+            target="_blank"
             href="https://www.linkedin.com/in/tamjid-mostafa/"
           >
             <AiFillLinkedin size="3rem" />
@@ -136,6 +138,7 @@ const Header = () => {
             },
           }}
           viewport={{ once: false, amount: 0.25 }}
+          target="_blank"
           href="https://www.instagram.com/tamjid_mostafa/">
         <AiFillInstagram size="3rem"/>
       </SocialIcons>
