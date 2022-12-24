@@ -12,14 +12,43 @@ export const Container = styled(motion.div)`
   grid-column-gap: 2rem;
   padding: 1rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.md} {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: ${({ isOpen }) => (isOpen ? "repeat(2, 60px)" : "")};
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
   }
 `;
+
+export const MenuButton = styled.button`
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 3rem;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+  }
+`;
+export const CloseButton = styled.button`
+ display: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 3rem;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+  }
+`
 export const FixedHeader = styled(motion.div)`
   position: ${(props) => props.position};
   top: 0;
@@ -56,11 +85,15 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 /4;
+  grid-area: 1 / 3 / 2 /4;
   display: flex;
   justify-content: space-around;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+  transition: 0.3s ease-in;
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-area: 2 / 3 / 3 / 5;
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+    flex-direction: column;
+    z-index: 10;
   }
 `;
 export const Div3 = styled.div`
@@ -70,7 +103,7 @@ export const Div3 = styled.div`
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    grid-area: 1 / 3 / 2 / 6;
   }
 `;
 
