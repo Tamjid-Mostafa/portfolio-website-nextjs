@@ -1,5 +1,4 @@
 import React from "react";
-import { DiFirebase, DiReact  } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -10,7 +9,6 @@ import {
   List,
   ListContainer,
   ListItem,
-  ListParagraph,
   ListTitle,
 } from "./TechnologiesStyles";
 import {
@@ -18,6 +16,7 @@ import {
   staggerContainer,
 } from "../../utils/motion";
 import { TypingText } from "../../utils/TypingTexts";
+import { Stacks } from "../../constants/constants";
 
 const Technologies = () => (
   <Section
@@ -39,7 +38,17 @@ const Technologies = () => (
     <List 
     variants={fadeIn('up', 'tween', 0.5, 1)}
     >
-      <ListItem>
+      {
+        Stacks.map((stack, i) => (
+          <ListItem key={i}>
+        {stack.icon}
+        <ListContainer>
+          <ListTitle>{stack.title}</ListTitle>
+        </ListContainer>
+      </ListItem>
+        ))
+      }
+{/*       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
@@ -60,19 +69,8 @@ const Technologies = () => (
             Node & Databases
           </ListParagraph>
         </ListContainer>
-      </ListItem>
-      {/*  <ListItem>
-        <DiZend size="3rem" />
-        <ListContainer>
-          <ListTitle>
-            UI/UX
-          </ListTitle>
-          <ListParagraph>
-            Experience with<br />
-            tools like Figma
-          </ListParagraph>
-        </ListContainer>
       </ListItem> */}
+      
     </List>
   </Section>
 );

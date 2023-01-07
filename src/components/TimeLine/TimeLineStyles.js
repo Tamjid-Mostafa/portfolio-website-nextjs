@@ -41,7 +41,7 @@ export const CarouselMobileScrollNode = styled(motion.div)`
 
 export const CarouselItem = styled(motion.div)`
   background: #0F1624;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 2rem;
   max-width: 196px;
 

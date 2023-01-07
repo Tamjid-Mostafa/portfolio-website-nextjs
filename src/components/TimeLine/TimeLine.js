@@ -91,7 +91,7 @@ const Timeline = () => {
               variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
               index={index} id={`carousel_item-${index}`} active={activeItem} onClick={(e) => handleClick(e, index)}>
                 <CarouselItemTitle>
-                  {item.month}
+                  {item.month}-{item.year}
                   <CarouselItemImg
                     width="208"
                     height="6"
